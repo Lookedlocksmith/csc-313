@@ -18,8 +18,10 @@ public class Quote {
     private String comment;
     private boolean complete;
     private Date completionDate;
-    private ArrayList materials;
-    private ArrayList processes;
+    private User completedBy;
+    private ArrayList<MaterialLine> materials;
+    private ArrayList<ProcessLine> processes;
+    private double buyouts;
     
     public double getLaborTotal(){ return 0;}
     public double getMaterialTotal(){return 0;}

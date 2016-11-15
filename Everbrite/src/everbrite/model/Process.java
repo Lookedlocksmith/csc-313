@@ -17,5 +17,33 @@ public class Process {
     private double runtime;
     private double toolingCost;
     private double rate;
+
+    public String getName() {
+        return name;
+    }
+
+    public String getWorkcenter() {
+        return workcenter;
+    }
+
+    public double getSetup() {
+        return setup;
+    }
+
+    public double getRuntime() {
+        return runtime;
+    }
+
+    public double getToolingCost() {
+        return toolingCost;
+    }
+
+    public double getRate() {
+        return rate;
+    }
+    
+    public double getCost(){
+        return getRate() * (getSetup() + getRuntime()) + getToolingCost();
+    }
     
 }

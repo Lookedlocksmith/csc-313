@@ -11,5 +11,27 @@ public class Material {
     private String desc;
     private double cost;
     private boolean stocked;
+
+    public String getName() {
+        return name;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public double getCost() {
+        return cost;
+    }
+
+    public boolean isStocked() {
+        return stocked;
+    }
+    
+    
     
 }

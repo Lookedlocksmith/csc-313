@@ -19,6 +19,7 @@ public class User extends Main {
     public static void setLogin(boolean Login) {
         User.Login = Login;
     }
+    //NameInput = UserInput.getText();
 
 //    public enum UserAuth {
 //
@@ -29,16 +30,32 @@ public class User extends Main {
         String NameInput;
         String PassInput;
 
-        public boolean Login() {
+    public String getNameInput() {
+        return NameInput;
+    }
 
+    public void setNameInput(String NameInput) {
+        this.NameInput = NameInput;
+    }
+
+    public String getPassInput() {
+        return PassInput;
+    }
+
+    public void setPassInput(String PassInput) {
+        this.PassInput = PassInput;
+    }
+        
+
+        public static boolean Login(String NameInput, String PassInput) {
+          
             if (PassInput.equals("Admin") && NameInput.equals("Admin")) {
-                setLogin(true);
+                Login = true;
                 return Login;
-            } // lblDisplay.setText("Credentials Accepted.");
-            else {
-               setLogin(false);
+            } else {
+               Login = false;
                return Login;
- //   lblDisplay.setText("Please try again.");
+ 
             }
         }
     }
